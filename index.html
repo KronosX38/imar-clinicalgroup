@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IMAR Medical Group — Health, Beauty & Dental Clinic</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#inicio" class="nav-logo">
+        <img src="/img/logotipo.svg" alt="IMAR Medical Group" class="nav-logo-img">
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#galeria">Instalaciones</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#contacto" class="nav-cta">Agendar cita</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg-shape"></div>
+    <div class="hero-content reveal">
+      <div class="eyebrow">
+        <span class="eyebrow-line"></span>
+        <span>Health · Beauty · Dental</span>
+      </div>
+      <h1>Tu mejor <em>sonrisa</em><br>comienza aquí.</h1>
+      <p class="hero-sub">En IMAR Medical Group combinamos salud, estética y odontología de vanguardia para ofrecerte
+        una experiencia de atención integral, cálida y personalizada en Tijuana.</p>
+      <div class="hero-btns">
+        <a href="#contacto" class="btn-primary">Agendar cita</a>
+        <a href="#servicios" class="btn-ghost">Ver servicios <span>→</span></a>
+      </div>
+    </div>
+    <div class="hero-visual reveal delay-2">
+      <div class="hero-img-wrap">
+        <div class="hero-img-placeholder">
+          <img src="/img/foto_principal.png" alt="IMAR Medical Group" style="width:100%; height:100%; object-fit:cover;">
+        </div>
+        <div class="hero-badge">
+          <span class="badge-num">10<small>+</small></span>
+          <span class="badge-label">Años de experiencia</span>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num" data-target="3000">0</span><small>+</small>
+          <span class="stat-label">Pacientes</span>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="98">0</span><small>%</small>
+          <span class="stat-label">Satisfacción</span>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="6">0</span><small></small>
+          <span class="stat-label">Especialidades</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIVIDER -->
+  <div class="gold-divider"></div>
+
+  <!-- SERVICIOS MÉDICOS -->
+  <section class="section" id="servicios">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="eyebrow"><span class="eyebrow-line"></span><span>Especialidades médicas</span></div>
+        <h2>Atención <em>integral</em> para toda la familia</h2>
+        <p class="section-sub">Contamos con un equipo de especialistas certificados para cuidar tu salud en cada etapa
+          de la vida.</p>
+      </div>
+
+      <div class="med-grid">
+        <div class="med-card reveal">
+          <div class="med-icon">👨‍⚕️</div>
+          <div class="med-name">Médico General</div>
+          <p class="med-desc">Consultas de primer contacto, diagnóstico y seguimiento de tu salud integral.</p>
+        </div>
+        <div class="med-card reveal delay-1">
+          <div class="med-icon">🌸</div>
+          <div class="med-name">Ginecología</div>
+          <p class="med-desc">Atención especializada en salud femenina, revisiones periódicas y cuidado preventivo.</p>
+        </div>
+        <div class="med-card reveal delay-2">
+          <div class="med-icon">👶</div>
+          <div class="med-name">Pediatría</div>
+          <p class="med-desc">Cuidado médico especializado para bebés, niños y adolescentes en todas sus etapas.</p>
+        </div>
+        <div class="med-card reveal delay-1">
+          <div class="med-icon">🧠</div>
+          <div class="med-name">Psiquiatría</div>
+          <p class="med-desc">Diagnóstico y tratamiento de trastornos mentales con un enfoque humano y profesional.</p>
+        </div>
+        <div class="med-card reveal delay-2">
+          <div class="med-icon">🫀</div>
+          <div class="med-name">Médico Internista</div>
+          <p class="med-desc">Especialista en enfermedades internas, manejo de condiciones crónicas y complejas.</p>
+        </div>
+        <div class="med-card reveal delay-3">
+          <div class="med-icon">👨‍👩‍👧‍👦</div>
+          <div class="med-name">Atención Familiar</div>
+          <p class="med-desc">Programas de salud preventiva y seguimiento médico para toda tu familia.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="gold-divider"></div>
+
+  <!-- SERVICIOS DENTALES -->
+  <section class="section section-alt" id="dental">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="eyebrow"><span class="eyebrow-line"></span><span>Odontología</span></div>
+        <h2>Tu sonrisa en manos <em>expertas</em></h2>
+        <p class="section-sub">Ofrecemos tratamientos dentales de alta calidad con tecnología de vanguardia para que
+          recuperes la confianza en tu sonrisa.</p>
+      </div>
+
+      <div class="dental-grid">
+        <div class="dental-card reveal">
+          <div class="dental-icon">✨</div>
+          <div class="dental-name">Diseño de Sonrisa</div>
+          <p class="dental-desc">Transformación estética personalizada para lograr la sonrisa que siempre soñaste.</p>
+        </div>
+        <div class="dental-card reveal delay-1">
+          <div class="dental-icon">💎</div>
+          <div class="dental-name">Carillas de Porcelana</div>
+          <p class="dental-desc">Láminas ultra delgadas que corrigen color, forma y tamaño de tus dientes.</p>
+        </div>
+        <div class="dental-card reveal delay-2">
+          <div class="dental-icon">🦷</div>
+          <div class="dental-name">Ortodoncia</div>
+          <p class="dental-desc">Brackets y alineadores para corregir la posición dental de forma cómoda y efectiva.</p>
+        </div>
+        <div class="dental-card reveal delay-3">
+          <div class="dental-icon">🔬</div>
+          <div class="dental-name">Endodoncia</div>
+          <p class="dental-desc">Tratamiento de conductos para salvar dientes con infección o daño en la pulpa dental.
+          </p>
+        </div>
+        <div class="dental-card reveal">
+          <div class="dental-icon">🩺</div>
+          <div class="dental-name">Cirugía de Terceros Molares</div>
+          <p class="dental-desc">Extracción de muelas del juicio con técnica mínimamente invasiva y recuperación rápida.
+          </p>
+        </div>
+        <div class="dental-card reveal delay-1">
+          <div class="dental-icon">🎨</div>
+          <div class="dental-name">Resinas Dentales</div>
+          <p class="dental-desc">Restauraciones estéticas del color natural de tus dientes con materiales de alta
+            calidad.</p>
+        </div>
+        <div class="dental-card reveal delay-2">
+          <div class="dental-icon">🔧</div>
+          <div class="dental-name">Placas Parciales</div>
+          <p class="dental-desc">Prótesis removibles que reemplazan uno o varios dientes perdidos con naturalidad.</p>
+        </div>
+        <div class="dental-card reveal delay-3">
+          <div class="dental-icon">⭐</div>
+          <div class="dental-name">Placas Totales</div>
+          <p class="dental-desc">Prótesis completas personalizadas para recuperar tu función masticatoria y estética
+            facial.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORQUE ELEGIRNOS -->
+  <section class="why">
+    <div class="why-inner">
+      <div class="why-content reveal">
+        <div class="eyebrow eyebrow-light"><span class="eyebrow-line"></span><span>¿Por qué elegirnos?</span></div>
+        <h2 class="why-title">Excelencia en cada <em>detalle</em></h2>
+        <p class="why-sub">Ubicados en el corazón de Tijuana, dentro del Edificio Médico del Grand Hotel, combinamos la
+          mejor ubicación con la más alta calidad médica.</p>
+        <div class="why-badge-row">
+          <div class="why-badge reveal delay-1">
+            <span class="why-badge-icon">🏆</span>
+            <div>
+              <strong>Especialistas certificados</strong>
+              <p>Equipo con formación nacional e internacional.</p>
+            </div>
+          </div>
+          <div class="why-badge reveal delay-2">
+            <span class="why-badge-icon">⚡</span>
+            <div>
+              <strong>Tecnología de vanguardia</strong>
+              <p>Equipos modernos para diagnósticos precisos.</p>
+            </div>
+          </div>
+          <div class="why-badge reveal delay-3">
+            <span class="why-badge-icon">🏨</span>
+            <div>
+              <strong>Convenio con Grand Hotel</strong>
+              <p>Estadía preferencial para pacientes foráneos.</p>
+            </div>
+          </div>
+          <div class="why-badge reveal delay-1">
+            <span class="why-badge-icon">❤️</span>
+            <div>
+              <strong>Atención personalizada</strong>
+              <p>Planes de tratamiento adaptados a tus necesidades.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="why-visual reveal delay-2">
+        <div class="why-img-wrap">
+          <div class="why-img-placeholder">
+            <img src="img/team_imar_01.jpeg" alt="IMAR Medical Group"
+              style="width:100%; height:100%; object-fit:cover;">
+          </div>
+          <div class="why-tag">
+            <span>📍</span>
+            <span>Grand Hotel Tijuana<br><small>Edificio Médico Piso 4, Local 401</small></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section" id="galeria">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="eyebrow"><span class="eyebrow-line"></span><span>Nuestras instalaciones</span></div>
+        <h2>Un espacio pensado<br>para tu <em>confort</em></h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item gallery-item--large reveal">
+          <div class="gallery-placeholder">
+            <img src="img/recepcion.png" alt="IMAR Medical Group" style="width:100%; height:100%; object-fit:cover;">
+          </div>
+          <div class="gallery-overlay"><span>Recepción principal</span></div>
+        </div>
+        <div class="gallery-item reveal delay-1">
+          <div class="gallery-placeholder">
+            <img src="img/consultorio.png" alt="IMAR Medical Group" style="width:100%; height:100%; object-fit:cover;">
+          </div>
+          <div class="gallery-overlay"><span>Consultorio dental</span></div>
+        </div>
+        <div class="gallery-item reveal delay-2">
+          <div class="gallery-placeholder">
+            <img src="img/zona_esteril.png" alt="IMAR Medical Group" style="width:100%; height:100%; object-fit:cover;">
+          </div>
+          <div class="gallery-overlay"><span>Limpieza de Material</span></div>
+        </div>
+        <div class="gallery-item reveal delay-1">
+          <div class="gallery-placeholder">
+            <img src="img/equipo_consultorio.png" alt="IMAR Medical Group" style="width:100%; height:100%; object-fit:cover;">
+          </div>
+          <div class="gallery-overlay"><span>Equipo de diagnóstico</span></div>
+        </div>
+        <div class="gallery-item reveal delay-2">
+          <div class="gallery-placeholder">
+            <img src="img/sala_espera.png" alt="IMAR Medical Group" style="width:100%; height:100%; object-fit:cover;">
+          </div>
+          <div class="gallery-overlay"><span>Sala de espera</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="gold-divider"></div>
+
+  <!-- MISSION VISION VALUES -->
+  <section class="section" id="nosotros">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="eyebrow"><span class="eyebrow-line"></span><span>Quiénes somos</span></div>
+        <h2>Comprometidos con tu <em>salud y bienestar</em></h2>
+      </div>
+      <div class="mvv-grid">
+        <div class="mvv-card reveal">
+          <div class="mvv-icon">🎯</div>
+          <div class="mvv-label">Misión</div>
+          <h3 class="mvv-title">Nuestra razón de ser</h3>
+          <p>Brindar servicios de salud, belleza y odontología de la más alta calidad en Tijuana, con un equipo humano
+            comprometido y tecnología de vanguardia, mejorando la calidad de vida de cada paciente con calidez y
+            profesionalismo.</p>
+        </div>
+        <div class="mvv-card reveal delay-1">
+          <div class="mvv-icon">🔭</div>
+          <div class="mvv-label">Visión</div>
+          <h3 class="mvv-title">Hacia dónde vamos</h3>
+          <p>Ser el grupo médico de referencia en la región fronteriza, reconocido por la excelencia en atención
+            integral, la innovación constante y el impacto positivo en la salud de la comunidad, atendiendo pacientes
+            locales e internacionales.</p>
+        </div>
+        <div class="mvv-card reveal delay-2">
+          <div class="mvv-icon">💎</div>
+          <div class="mvv-label">Valores</div>
+          <h3 class="mvv-title">Lo que nos define</h3>
+          <p><strong>Excelencia</strong> en cada tratamiento. <strong>Integridad</strong> y ética profesional.
+            <strong>Empatía</strong> hacia cada paciente. <strong>Innovación</strong> permanente.
+            <strong>Compromiso</strong> con tu bienestar. Cada visita es una oportunidad para superar tus expectativas.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contacto">
+    <div class="contact-inner">
+      <div class="contact-info reveal">
+        <div class="eyebrow eyebrow-light"><span class="eyebrow-line"></span><span>Contáctanos</span></div>
+        <h2 class="contact-title">Agenda tu <em>cita hoy</em></h2>
+        <p class="contact-sub">Estamos listos para atenderte. Visítanos en nuestras instalaciones dentro del Grand Hotel
+          Tijuana o contáctanos por cualquiera de nuestros canales.</p>
+
+        <div class="contact-details">
+          <div class="contact-item">
+            <div class="contact-item-icon">📍</div>
+            <div>
+              <strong>Dirección</strong>
+              <span>Edificio Médico del Grand Hotel · Tijuana · Piso 4, Local 401</span>
+              <span class="contact-note">🏨 Contamos con convenio en el hotel para estadía preferencial en
+                Tijuana</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">📞</div>
+            <div>
+              <strong>Teléfono</strong>
+              <span>[Número de contacto]</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">✉️</div>
+            <div>
+              <strong>Correo</strong>
+              <span>[Correo electrónico]</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">🕐</div>
+            <div>
+              <strong>Horarios</strong>
+              <span>Lunes a Sábado · 9:00 am – 7:00 pm</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-wrap">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3362.8!2d-117.0382!3d32.5149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d9502fac5e5e01%3A0x4e1a5f1e3c2b4a5d!2sGrand%20Hotel%20Tijuana!5e0!3m2!1ses!2smx!4v1620000000000!5m2!1ses!2smx"
+            width="100%" height="240" style="border:0; filter:grayscale(30%);" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap reveal delay-2">
+        <h3 class="form-title">Envíanos un mensaje</h3>
+        <p class="form-sub">Completa el formulario y te contactaremos vía WhatsApp a la brevedad.</p>
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Nombre completo</label>
+              <input type="text" id="fname" class="form-input" placeholder="Tu nombre" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Teléfono</label>
+              <input type="tel" id="fphone" class="form-input" placeholder="Tu teléfono" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Correo electrónico</label>
+            <input type="email" id="femail" class="form-input" placeholder="tucorreo@email.com">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Servicio de interés</label>
+            <select id="fservice" class="form-input">
+              <option value="">Selecciona un servicio</option>
+              <optgroup label="Especialidades Médicas">
+                <option>Médico General</option>
+                <option>Ginecología</option>
+                <option>Pediatría</option>
+                <option>Psiquiatría</option>
+                <option>Médico Internista</option>
+                <option>Atención Familiar</option>
+              </optgroup>
+              <optgroup label="Odontología">
+                <option>Diseño de Sonrisa</option>
+                <option>Carillas de Porcelana</option>
+                <option>Ortodoncia</option>
+                <option>Endodoncia</option>
+                <option>Cirugía de Terceros Molares</option>
+                <option>Resinas Dentales</option>
+                <option>Placas Parciales</option>
+                <option>Placas Totales</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Mensaje</label>
+            <textarea id="fmessage" class="form-input form-textarea" placeholder="¿Cómo podemos ayudarte?"></textarea>
+          </div>
+          <button type="submit" class="btn-whatsapp">
+            <span>💬</span> Enviar Mensaje
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img
+          src="img/logotipo_blanco.png"
+          alt="IMAR Medical Group" class="footer-logo">
+        <p class="footer-tagline">Health, Beauty & Dental Clinic<br>Tijuana, B.C. · Edificio Médico Grand Hotel · Piso 4
+          Local 401</p>
+      </div>
+      <div class="footer-links">
+        <a href="#servicios">Servicios</a>
+        <a href="#galeria">Instalaciones</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <div class="footer-copy">
+        © 2026 IMAR Medical Group<br>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
