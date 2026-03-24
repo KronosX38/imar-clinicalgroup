@@ -457,3 +457,7 @@ footer {
   display: block;
   margin: 0 auto;
 }
+
+.mvv-icon img {
+  margin: 0;
+}
