@@ -436,3 +436,24 @@ footer {
   .gallery-grid { grid-template-columns:1fr; }
   .form-row { grid-template-columns:1fr; }
 }
+
+/* ── ICONOS SVG PERSONALIZADOS ── */
+.med-icon img,
+.dental-icon img,
+.mvv-icon img,
+.why-badge-icon img {
+  width: 2.8rem;
+  height: 2.8rem;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+/* ── ICONOS SVG PERSONALIZADOS WHY US ── */
+.why-badge-icon img {
+  width: 2.8rem;
+  height: 2.8rem;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
