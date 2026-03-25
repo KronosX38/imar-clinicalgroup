@@ -259,14 +259,39 @@ if (form) {
   });
 }
 
-// Cookies
+// ── GOOGLE ANALYTICS CONDICIONAL ──
+function loadAnalytics() {
+  if (window.analyticsLoaded) return;
+  window.analyticsLoaded = true;
+
+  // ← Reemplaza G-XXXXXXXXXX con tu ID real de Google Analytics
+  const script = document.createElement('script');
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX';
+  script.async = true;
+  document.head.appendChild(script);
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+}
+
+// ── COOKIES ──
 const cookieBanner = document.getElementById('cookie-banner');
-const cookieBtn = document.getElementById('cookie-btn');
-if (!localStorage.getItem('imar_cookies_accepted')) {
+const cookieBtn    = document.getElementById('cookie-btn');
+
+// Si ya aceptó antes, carga Analytics directo
+if (localStorage.getItem('imar_cookies_accepted')) {
+  loadAnalytics();
+} else {
+  // Si no, muestra el banner después de 1.5s
   setTimeout(() => cookieBanner.classList.add('visible'), 1500);
 }
+
+// Al aceptar: guarda, oculta banner y carga Analytics
 cookieBtn.addEventListener('click', () => {
   localStorage.setItem('imar_cookies_accepted', '1');
   cookieBanner.classList.remove('visible');
   setTimeout(() => cookieBanner.remove(), 400);
+  loadAnalytics();
 });
